@@ -19,10 +19,10 @@
         <div> 
             <!--how to use button action in yajan -->
             <?php
-                $btn= new Button("test");//
-                $btn->setValue("PrintReport");//show is button text 
-	            $btn->addJsEvent("onClick","clicktest");//this function use do_action by use js 
-	            $btn->rander();//this function use show front web page this function is not use that is not show webpage
+                $btn= new Button("test");// declares the button and the first parameter assign id and name of the html element
+                $btn->setValue("PrintReport");//assign the text to the button
+	            $btn->addJsEvent("onClick","clicktest");//first parameter contains the listener your are support to use and second parameter defines the function name. 
+	            $btn->rander();//this shows the html element on the screen
 
             ?>
         </div>
