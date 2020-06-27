@@ -14,9 +14,9 @@
         <div> 
             <!--how to create button in yajan -->
             <?php
-                $btn= new Button("test");//
-                $btn->setValue("button");//show is button text 
-	            $btn->rander();//this function use show front web page this function is not use that is not show webpage
+                $btn= new Button("test");//declare the html element button
+                $btn->setValue("button");//assign the value to the button 
+	        $btn->rander();//this function is used to show the yajan object as html element on the screen
 
             ?>
         </div>
