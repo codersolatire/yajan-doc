@@ -15,23 +15,26 @@
     </head>
     <style>
 
-    </style> 
-    <script>
-        function clicktest(obj,e)
+    </style>
+       
+       <body>
+       <!-- <script>
+        function onClickGetDetail(obj,e)
         {
-         alert("test");//
-		}    
-    </script>
-    <body>
+            alert("test");
+        }
+</script> -->
         <div> 
-            <!--how to use button action in yajan -->
-            <?php
-                $btn= new Button("test");//
-                $btn->setValue("PrintReport");//show is button text 
-	            $btn->addJsEvent("onClick","clicktest");//this function use do_action by use js 
-	            $btn->rander();//this function use show front web page this function is not use that is not show webpage
-
-            ?>
-        </div>
+       
+           
+                    <?
+                    $b = new LovButton("test");
+                    $b->setValue("Select");
+                    $b->setUrl("/ashram/sanskar_profile/city");
+                    $b->rander();
+                    ?>
+				
+			
+            </div>
     </body>   
 </html>
