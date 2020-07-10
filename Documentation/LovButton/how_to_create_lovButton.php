@@ -16,16 +16,25 @@
     <style>
 
     </style>
-     
-    <body>
+       
+       <body>
+       <!-- <script>
+        function onClickGetDetail(obj,e)
+        {
+            alert("test");
+        }
+</script> -->
         <div> 
-            <!--how to create button in yajan -->
-            <?php
-                $btn= new Button("test");//declare the html element button
-                $btn->setValue("button");//assign the value to the button 
-	        $btn->rander();//this function is used to show the yajan object as html element on the screen
-
-            ?>
-        </div>
+       
+           
+                    <?
+                    $b = new LovButton("test");
+                    $b->setValue("Select");
+                    $b->setUrl("/ashram/sanskar_profile/city");
+                    $b->rander();
+                    ?>
+				
+			
+            </div>
     </body>   
 </html>

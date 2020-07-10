@@ -16,16 +16,21 @@
     <style>
 
     </style>
+
      
     <body>
         <div> 
-            <!--how to create button in yajan -->
+            <!--How to use HiddenItem method in yajan -->
+            <!-- this hidden method work is  -->
             <?php
-                $btn= new Button("test");//declare the html element button
-                $btn->setValue("button");//assign the value to the button 
-	        $btn->rander();//this function is used to show the yajan object as html element on the screen
-
+                $h = new HiddenItem("pid");//new id virable
+                $h->setValue($id);//
+                $h->rander();
             ?>
+          
+
+           
+
         </div>
     </body>   
 </html>

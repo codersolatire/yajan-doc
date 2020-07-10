@@ -16,16 +16,29 @@
     <style>
 
     </style>
+
      
     <body>
         <div> 
-            <!--how to create button in yajan -->
-            <?php
-                $btn= new Button("test");//declare the html element button
-                $btn->setValue("button");//assign the value to the button 
-	        $btn->rander();//this function is used to show the yajan object as html element on the screen
-
+        <?php
+            $q = "select code, name from country order by name";
+                    //echo $q;
+                    $r = $db->execute($q);
+                    $txt = new TokenInput("contactCountry");
+                    $txt->setRecordset($r);
+                    if($contactCountry=="" && $contactCountry==NULL)
+                    {
+                        $txt->setValue('INDA');
+                    }
+                    else
+                    {
+                        $txt->setValue($contactCountry);
+                    }
+                    $txt->setTokenLimit(1);
+					$txt->addJsEvent("onChange","onChangeCountry");
+                    $txt->rander();
             ?>
+
         </div>
     </body>   
 </html>

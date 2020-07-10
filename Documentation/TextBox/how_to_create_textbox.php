@@ -16,16 +16,29 @@
     <style>
 
     </style>
+    <script>
+       function calcAmount(obj,e)
+       {
+           alert("test");
+       }
+    </script>
      
     <body>
         <div> 
-            <!--how to create button in yajan -->
+            <!--How to use TextBox method in yajan -->
             <?php
-                $btn= new Button("test");//declare the html element button
-                $btn->setValue("button");//assign the value to the button 
-	        $btn->rander();//this function is used to show the yajan object as html element on the screen
-
+                
+           
+                $txt = new TextBox("subsQty");
+                $txt->setValue(1);
+                $txt->addJsEvent("onBlur","calcAmount");
+                $txt->rander();
+            
             ?>
+          
+
+           
+
         </div>
     </body>   
 </html>
